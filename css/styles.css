@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?li441l');
+    src:  url('../fonts/icomoon.eot?li441l#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?li441l') format('truetype'),
+      url('../fonts/icomoon.woff?li441l') format('woff'),
+      url('../fonts/icomoon.svg?li441l#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-search:before {
+    content: "\e900";
+  }
+  /* Variables  */
+  :root{
+      --blue:#447ff5;
+      --lenguage: #3366cc;
+  }
+body{
+    margin: 0;
+    font-family: 'Gerogia';
+}
+.hero{
+    display: flex;
+    justify-content: center;
+
+}
+.hero-logo-title{
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+        
+}
+.hero-logo{
+    margin: 0;
+}
+.hero-logo img{
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+}
+.hero-title{
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    margin: 0;
+    font-size: 2.3rem;
+}
+.hero-title p{
+    font-weight: 200;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.input{
+    display: flex;
+    justify-content: center;
+}
+.input-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-text input{
+    padding: 16px 30px;
+    border-radius: 1px;
+    border-style: groove;
+}
+.input-text input:hover{
+    border-color: var(--blue);
+    outline-color: var(--blue);
+    
+}
+.input-icon-search{
+ 
+    background-color:#36c ;
+    align-self: center;
+    padding: 13px 15px;
+    color: white;
+    display: flex;
+    align-content: center;
+}
+.icon-search{
+    font-size: 1.6rem;
+}
+.lenguages{
+    margin-top: 1rem;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    gap: 15px ;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.lenguages-info p{
+    padding: 0;
+    margin: 0;
+    color: #54595d;
+    padding: 2px;
+}
+.lenguages-info p:nth-child(1){
+    font-size: 1rem;
+    color: var(--lenguage);
+    font-weight: 600;
+}
+.lenguages-info p:nth-child(2){
+    font-size: .8rem;
+}
+.lenguages-info p:last-child{
+    font-size: .8rem;
+}
+.read-wikipedia-form{
+  
+    text-align: center;
+    border: 1px solid  #72777d;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 3px;
+    
+}
+.read-wikipedia-form button{
+    padding: .7rem;
+    border: none;
+    background-color: white;
+    color: var(--lenguage);
+    font-weight: 600;
+    border-color: #72777d;
+  
+}
+.read-wikipedia-form i{
+    font-size: .6rem;
+    color: var(--lenguage);
+}
+.read-wikipedia hr{
+    margin-top: 30px;
+    width: 90%;
+    
+}
+
+footer img{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.fotter-wikipedia-info{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 90%;
+    color: rgb(84, 89, 93);
+    margin: 0 auto;
+    font-size: 0.9rem;
+    font-weight: 500;
+   line-height: 1.3rem;
+}
+.fotter-wikipedia-info a{
+    text-decoration: none;
+    color: var(--lenguage);
+}
+.wiki-several{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: start;
+    row-gap: 2rem;
+}
+.wiike-several-app{
+    display: grid;
+    grid-template-areas: "image title"
+                        "image description";
+    
+}
+
+.wiike-several-app img{
+    grid-area: image;
+    align-self: center;
+    margin: 6px;
+}
+.wiike-several-appt-tittle{
+   
+    grid-area: title;
+    margin: 0;
+}
+.wiike-several-app p:last-child{
+    grid-area: description;
+    margin: 0;
+}
